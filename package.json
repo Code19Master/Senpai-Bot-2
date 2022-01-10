@@ -1,0 +1,41 @@
+{
+  "name": "Senpai-Bot-20",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "engines": {
+    "node": "^16.13.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.10.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "cheerio": "^1.0.0-rc.10",
+    "discord-api-types": "^0.26.0",
+    "discord.js": "^13.3.1",
+    "express": "^4.17.2",
+    "fs": "0.0.1-security",
+    "intervals-for-humans": "^1.0.4",
+    "moment": "^2.29.1",
+    "prettytime": "^1.0.0",
+    "something-random-on-discord": "^3.4.4",
+    "weky": "^3.1.8"
+  },
+  "devDependencies": {
+    "node": "^16.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code19Master/Senpai-Bot-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Code19Master/Senpai-Bot-/issues"
+  },
+  "homepage": "https://github.com/Code19Master/Senpai-Bot-#readme",
+  "description": "Feel free to open an issue with your bug report or feature request, with as many details as possible. If you'd like to write a feature, please open an issue first for discussion. For help with the bot."
+}
