@@ -15,6 +15,15 @@ const { Permissions } = require('discord.js');
 const { FastType } = require('weky');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
+const { Levels } = require('discord-xp');
+
+//leveling system
+const config = require("./config.json");       
+const Enmap = require("enmap")                 
+const canvacord = require("canvacord")         
+client.points = new Enmap({ name: "points" });
+const leveling = require("./ranking");         
+leveling(client);
 
 
 
@@ -23,6 +32,9 @@ const { Routes } = require('discord-api-types/v9');
 
 
 client.commands = new Collection();
+
+
+Levels.setURL("mongodb+srv://TDSwamp:TDSwamp1234@tdswamp.n7myy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 
 
