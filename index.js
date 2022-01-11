@@ -16,15 +16,12 @@ const { FastType } = require('weky');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { Levels } = require('discord-xp');
+const { colors } = require("colors")
 
-//leveling system
-const config = require("./config.json");       
-const Enmap = require("enmap")                 
-const canvacord = require("canvacord")         
-client.points = new Enmap({ name: "points" });
-const leveling = require("./ranking");         
-leveling(client);
 
+
+
+require("./logger")(client);
 
 
 
@@ -34,7 +31,7 @@ leveling(client);
 client.commands = new Collection();
 
 
-Levels.setURL("mongodb+srv://TDSwamp:TDSwamp1234@tdswamp.n7myy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+Levels.setURL("mongodb+srv://Divik:Kush@198@discordbot.qibqe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 
 
@@ -173,7 +170,7 @@ let embed = new Discord.MessageEmbed()
 .addField("GAME COMMANDS:video_game:",
 '`--rps`' )
 .addField("FUN COMMANDS <a:rbgblobvibe:872848644930437160> ",
-'`--rr`, ' + '`--hack`,' + '`--coinflip`, ' + '`--fact`, ' + '`--kill`, ' + '`--reminder`, ' + '`--nitro`, ' +  '`--guessnum`, ' + '`--guessnum`, ' + '`--guessnum`')
+'`--rr`, ' + '`--hack`,' + '`--coinflip`, ' + '`--fact`, ' + '`--kill`, ' + '`--reminder`, ' + '`--nitro`, ' +  '`--guessnum`, ' + '`--type`, ' + '`--never`')
 .addField("MODERATION COMMANDS <:pepecool:872848646759133214>",
 '`--kick`, ' + '`--ban`, ' + '`--purge`, ' + '`--mute`, ' + '`--unmute`, ' + '`--emoji`, ' + '`--listrole`')
 .addField("TECHNOLOGY COMMANDS:man_technologist:",
