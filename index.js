@@ -487,52 +487,6 @@ message.channel.send({ embeds: [embed] });
     message.channel.send({ embeds: [embed] }); 
   }
 
-  const guildId = '758560474308018197';
-  const guild = client.guilds.cache.get(guildId);
-  let commands
-
-  if(guild) {
-    commands = guild.commands;
-  } else {
-    commands = client.application.commands;
-  }
-
-  commands?.create({
-    name: "ping",
-    description: "Tells You Ping Of Bot."
-  });
-
-  commands?.create({
-    name: "add",
-    description: "Adds two numbers.",
-    options: [
-      {
-        name: "num1",
-        description: "THe first number.",
-        required: true
-        type: Discord.Constants.ApplicationCommandOPtionTypes.NUMBER
-      },
-      {
-        name: "num2",
-        de
-      }
-    ]
-  })
-
-
-});
-
-client.on("interactionCreate", async (interaction) => {
-  if(!interaction.isCommand()) {
-    return;
-  }
-
-  const { commandName, options } = interaction;
-
-  if(commandName === "ping") {
-    interaction.reply(`🏓 pong! ${client.ws.ping} ms`);
-  }
-
   //emoji
     if(message.content === "--emoji") {
     const args = message.content.trim().split(/ +/g);
