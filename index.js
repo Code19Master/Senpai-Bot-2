@@ -16,12 +16,7 @@ const { FastType } = require('weky');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { Levels } = require('discord-xp');
-const { colors } = require("colors")
 
-
-
-
-require("./logger")(client);
 
 
 

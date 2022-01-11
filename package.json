@@ -23,7 +23,6 @@
     "intervals-for-humans": "^1.0.4",
     "moment": "^2.29.1",
     "prettytime": "^1.0.0",
-    "colors": "^1.4.0",
     "something-random-on-discord": "^3.4.4",
     "weky": "^3.1.8"
   },
