@@ -428,7 +428,7 @@ if(message.content.toLowerCase().startsWith('--reminder')){
  .setTitle("Reminder")
  .setDescription(`${message.author}, ${msg}`)
  rem.send({ embeds: [e] })
- rem.send(${message.author})
+ rem.send(`${message.author}`)
  }, parseInt(args[0], 10) * 1000)
 }
      
