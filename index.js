@@ -25,8 +25,6 @@ const { Routes } = require('discord-api-types/v9');
 client.commands = new Collection();
 
 
-Levels.setURL("mongodb+srv://Divik:Kush@198@discordbot.qibqe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-
 
 
 //status
