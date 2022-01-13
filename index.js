@@ -20,7 +20,7 @@ const { DiscordTogether } = require('discord-together');
 
 
 
-client.DiscordTogether = new DiscordTogether(client);
+client.discordTogether = new DiscordTogether(client);
 
 
 
@@ -615,8 +615,9 @@ await FastType({
 });
 }
 if (message.content === '--ytt') {
-client.DiscordTogether.createTogetherCode(message.member.voice.channel.id, 'youtube').then(async invite => {
-  return message.channel.send(`${invite.code}`);
+  if(message.member.voice.channel) {
+    client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'doodlecrew').then(async invite => {
+        return message.channel.send(`${invite.code}`);
 });
 }
 
