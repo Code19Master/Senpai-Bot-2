@@ -619,6 +619,11 @@ client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'yout
   return message.channel.send(`${invite.code}`);
 });
 }
+if (message.content === '--chess') {
+  client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'chess').then(async invite => {
+    return message.channel.send(`${invite.code}`);
+});
+}
 
 })
 
