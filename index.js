@@ -15,6 +15,7 @@ const { Permissions } = require('discord.js');
 const { FastType } = require('weky');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
+const { DiscordTogether } = require('discord-together');
 
 
 
