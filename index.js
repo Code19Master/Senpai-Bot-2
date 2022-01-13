@@ -621,6 +621,8 @@ if (message.content === '--ytt') {
 });
 }
 
+}
+
 })
 
 
