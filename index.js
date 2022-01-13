@@ -608,7 +608,7 @@ await FastType({
     othersMessage: 'Only <@{{author}}> can use the buttons!'
 });
 }
-if (message.content === '--play yt') {
+if (message.content === '--ytt') {
 client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'youtube').then(async invite => {
   return message.channel.send(`${invite.code}`);
 });
