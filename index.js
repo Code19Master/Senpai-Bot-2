@@ -616,9 +616,9 @@ await FastType({
 }
 if (message.content === '--ytt') {
   if(message.member.voice.channel) {
-    client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'doodlecrew').then(async invite => {
-        return message.channel.send(`${invite.code}`);
-});
+    client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'youtube').then(async invite => {
+      return message.channel.send(`${invite.code}`);
+  });
 }
 
 }
