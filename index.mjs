@@ -1,22 +1,22 @@
 
-let Discord = require("discord.js");
+let Discord = import("discord.js");
 let client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed } = import('discord.js');
 client.setMaxListeners(0);
-const moment = require("moment")
-const random = require("something-random-on-discord").Rando
+const moment = import("moment")
+const random = import("something-random-on-discord").Rando
 let snipe = new Discord.Collection(); 
-const { MessageActionRow, MessageButton } = require('discord.js');
-const { Client, Intents, Collection } = require('discord.js');
-const { Calculator } = require('weky');
-const { GuessTheNumber } = require('weky');
-const { NeverHaveIEver } = require('weky');
-const { Permissions } = require('discord.js');
-const { FastType } = require('weky');
-const { REST } = require('@discordjs/rest');
-const { Routes } = require('discord-api-types/v9');
-const { DiscordTogether } = require('discord-together');
-const { fetch } = require("node-fetch");
+const { MessageActionRow, MessageButton } = import('discord.js');
+const { Client, Intents, Collection } = import('discord.js');
+const { Calculator } = import('weky');
+const { GuessTheNumber } = import('weky');
+const { NeverHaveIEver } = import('weky');
+const { Permissions } = import('discord.js');
+const { FastType } = import('weky');
+const { REST } = import('@discordjs/rest');
+const { Routes } = import('discord-api-types/v9');
+const { DiscordTogether } = import('discord-together');
+const { fetch } = import("node-fetch");
 
 
 
