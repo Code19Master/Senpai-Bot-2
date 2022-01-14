@@ -617,39 +617,14 @@ await FastType({
     buttonText: 'Cancel',
     othersMessage: 'Only <@{{author}}> can use the buttons!'
 });
-}
 //ytt
-if(!message.guild || message.author.bot || !message.content.trim().startsWith(config.prefix)) return;
+if (message.content === '--ytt') {
+  if(message.member.voice.channel) {
+    client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'youtube').then(async invite => {
+      return message.channel.send(`${invite.code}`);
+  });
+}
 
-var args = message.content.slice(config.prefix.length).trim().split(" ")
-
-var cmd = args.shift().toLowerCase()
-
-const { channel } = message.member.voice;
-if(!channel) return message.reply("You need to join a Voice Channel")
-
-if(message.content === '--ytt'){
-    fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
-        method: "POST",
-        body: JSON.stringify({
-            max_age: 86400,
-            max_uses: 0,
-            target_application_id: "755600276941176913",
-            target_type: 2,
-            temporary: false,
-            validate: null
-        }),
-        headers: {
-            "Authorization": `Bot ${config.token}`,
-            "Content-Type": "application/json"
-        }
-    }).then(res => res.json())
-    .then(invite =>{
-        if(!invite.code) return message.reply(":x: Cannot start minigame")
-        message.channel.send(`Click on the **__Link__** to start the GAME:\n> https://discord.com/invite/${invite.code}`)
-    })
-  }
-})
 
 
 
