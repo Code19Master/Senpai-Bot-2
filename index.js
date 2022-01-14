@@ -16,7 +16,7 @@ const { FastType } = require('weky');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { DiscordTogether } = require('discord-together');
-const { fetch } = require("node-fetch");
+const fetch = require("node-fetch");
 
 
 
