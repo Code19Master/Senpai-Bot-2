@@ -24,7 +24,10 @@ const { fetch } = require("node-fetch");
 client.discordTogether = new DiscordTogether(client);
 
 
-
+const config = {
+  "token": ("OTA5MDE0NzUwMDE1NDAyMDA0.YY-H9Q.m_WNzE8Fp88fvYAZ7Twvgyxvw3U") ,
+  "prefix": "--"
+}
 
 
 
