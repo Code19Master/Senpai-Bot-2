@@ -631,6 +631,7 @@ if (message.content === '--chess') {
   });
 
 }
+}
 
 
 
