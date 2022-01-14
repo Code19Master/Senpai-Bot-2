@@ -16,7 +16,7 @@ const { FastType } = import('weky');
 const { REST } = import('@discordjs/rest');
 const { Routes } = import('discord-api-types/v9');
 const { DiscordTogether } = import('discord-together');
-const { fetch } = import("node-fetch");
+
 
 
 
