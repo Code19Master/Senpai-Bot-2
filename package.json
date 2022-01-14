@@ -26,11 +26,13 @@
     "something-random-on-discord": "^3.4.4",
     "weky": "^3.1.8",
     "discord-together": "^1.3.25",
-    "node-fetch": "^3.1.0"
+    "node-fetch": "^3.1.0",
+    "type": "module"
   },
   "devDependencies": {
     "node": "^16.13.1"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Code19Master/Senpai-Bot-.git"
