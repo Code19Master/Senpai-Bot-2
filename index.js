@@ -617,6 +617,7 @@ await FastType({
     buttonText: 'Cancel',
     othersMessage: 'Only <@{{author}}> can use the buttons!'
 });
+}
 //ytt
 if (message.content === '--ytt') {
   if(message.member.voice.channel) {
@@ -624,6 +625,10 @@ if (message.content === '--ytt') {
       return message.channel.send(`${invite.code}`);
   });
 }
+}
+
+
+})
 
 
 
