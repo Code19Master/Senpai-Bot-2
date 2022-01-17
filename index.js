@@ -137,6 +137,12 @@ client.on('channelDelete', async channel => {
 });
 //message update
 client.on('messageUpdate', (oldMessage, newMessage) => {
+  let em = new Discord.MessageEmbed()
+  .setAuthor(message.author.username)
+  .setTitle("Edited Message")
+  .setDescription(oldMessage, newMessage)
+  .setColor("RANDOM")
+  .setTimeout()
   client.channels.cache.get('925362722298818601').send(oldMessage, newMessage);
 });
 
