@@ -143,7 +143,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
   .setDescription(oldMessage, newMessage)
   .setColor("RANDOM")
   .setTimeout()
-  client.channels.cache.get('925362722298818601').send(oldMessage, newMessage);
+  client.channels.cache.get('925362722298818601').send(({ embeds: [em] }));
 });
 
 
