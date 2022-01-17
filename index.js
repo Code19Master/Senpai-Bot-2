@@ -138,7 +138,6 @@ client.on('channelDelete', async channel => {
 //message update
 client.on('messageUpdate', (oldMessage, newMessage) => {
   let em = new Discord.MessageEmbed()
-  .setAuthor(message.author.username)
   .setTitle("Edited Message")
   .setDescription(oldMessage, newMessage)
   .setColor("RANDOM")
