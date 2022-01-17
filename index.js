@@ -24,10 +24,7 @@ const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 
 
-const config = {
-  "token": ("OTA5MDE0NzUwMDE1NDAyMDA0.YY-H9Q.m_WNzE8Fp88fvYAZ7Twvgyxvw3U") ,
-  "prefix": "--"
-}
+
 
 
 
@@ -137,6 +134,10 @@ client.on('channelDelete', async channel => {
   .setTimestamp()
   
     client.channels.cache.get('925362722298818601').send(({ embeds: [embed] }));
+});
+//message update
+client.on('messageUpdate', (oldMessage, newMessage) => {
+  client.channels.cache.get('925362722298818601').log(oldMessage, newMessage);
 });
 
 
