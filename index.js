@@ -137,7 +137,7 @@ client.on('channelDelete', async channel => {
 });
 //message update
 client.on('messageUpdate', (oldMessage, newMessage) => {
-  client.channels.cache.get('925362722298818601').log(oldMessage, newMessage);
+  client.channels.cache.get('925362722298818601').send(oldMessage, newMessage);
 });
 
 
