@@ -135,15 +135,6 @@ client.on('channelDelete', async channel => {
   
     client.channels.cache.get('925362722298818601').send(({ embeds: [embed] }));
 });
-//message update
-client.on('messageUpdate', (oldMessage, newMessage) => {
-  let em = new Discord.MessageEmbed()
-  .setTitle("Edited Message")
-  .setDescription(oldMessage, newMessage)
-  .setColor("RANDOM")
-  .setTimeout()
-  client.channels.cache.get('925362722298818601').send(({ embeds: [em] }));
-});
 
 
 
