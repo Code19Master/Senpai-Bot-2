@@ -1,6 +1,6 @@
 
 let Discord = require("discord.js");
-let client = new Discord.Client({ intents: [ GUILDS, GUILD_MEMBERS, GUILD_BANS, GUILD_MESSAGES, GUILD_VOICE_STATES ] });
+let client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_BANS', 'GUILD_MESSAGES', 'GUILD_VOICE_STATES'] });
 const { MessageEmbed } = require('discord.js');
 client.setMaxListeners(0);
 const moment = require("moment")
