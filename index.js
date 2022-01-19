@@ -16,7 +16,7 @@ const { FastType } = require('weky');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { DiscordTogether } = require('discord-together');
-const { Auditlog } = require("discord-auditlog");
+const Auditlog = require("discord-auditlog");
 
 
 
@@ -73,7 +73,7 @@ client.on('messageDelete', function(message, channel) {
 
 
 //audit logs
-Auditlog(bot, {
+Auditlog(client, {
 	"serverid": {
 		auditlog: "logs",	
 		movement: "in-out",
