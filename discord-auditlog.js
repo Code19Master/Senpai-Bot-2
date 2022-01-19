@@ -6,17 +6,17 @@
     }
 
     const eventtype = {
-        guildMemberAdd: "movement",
-        guildMemberRemove: "movement",
-        guildBanAdd: "movement",
-        guildBanRemove: "movement",
+        guildMemberAdd: "auditlog",
+        guildMemberRemove: "auditlog",
+        guildBanAdd: "auditlog",
+        guildBanRemove: "auditlog",
         guildMemberUpdate: "auditlog",
         usernameChangedMsg: "auditlog",
         discriminatorChangedMsg: "auditlog",
         avatarChangedMsg: "auditlog",
-        messageDelete: "auditmsg",
-        messageUpdate: "auditmsg",
-        voiceStateUpdate: "voice"
+        messageDelete: "auditlog",
+        messageUpdate: "auditlog",
+        voiceStateUpdate: "auditlog"
     }
     console.log(`Module: ${description.name} | Loaded version ${description.version} from ("${description.filename}")`)
 
