@@ -75,7 +75,7 @@ client.on('messageDelete', function(message, channel) {
 //audit logs
 Auditlog(bot, {
 	"serverid": {
-		auditlog: "audit-log",	
+		auditlog: "logs",	
 		movement: "in-out",
 		auditmsg: false, // Default to fasle, recommend to set a channel
 		voice: false, // Set a Channel name if you want it
