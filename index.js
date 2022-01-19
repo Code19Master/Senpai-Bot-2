@@ -76,10 +76,10 @@ client.on('messageDelete', function(message, channel) {
 Auditlog(client, {
 	"serverid": {
 		auditlog: "logs",	
-		movement: "in-out",
-		auditmsg: false, // Default to fasle, recommend to set a channel
-		voice: false, // Set a Channel name if you want it
-		trackroles: true, // Default is False
+		movement: "logs",
+		auditmsg: "logs",
+		voice: "logs", 
+		trackroles: "logs", 
 	}
 });
 
