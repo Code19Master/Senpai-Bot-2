@@ -77,9 +77,9 @@ Auditlog(client, {
 	"serverid": {
 		auditlog: "logs",	
 		movement: "logs",
-		auditmsg: "logs",
-		voice: "logs", 
-		trackroles: "logs", 
+		auditmsg: true, // Default to fasle, recommend to set a channel
+		voice: true, // Set a Channel name if you want it
+		trackroles: true, // Default is False
 	}
 });
 
