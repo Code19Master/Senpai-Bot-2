@@ -1,6 +1,6 @@
 
 let Discord = require("discord.js");
-let client = new Client({
+let client = new Discord.Client({
   intents: [
       Intents.FLAGS.GUILDS,
       Intents.FLAGS.GUILD_MEMBERS,
