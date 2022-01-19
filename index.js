@@ -117,11 +117,11 @@ client.on("messageDelete", async (message) => {
 })
 //Channel Create
 client.on('channelCreate', async channel => {
-  const logs = message.guild.channels.cache.find(channel => channel.name === "logs");
-  if (message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) {
-    message.guild.channels.create("logs", { type: "GUILD_TEXT" });
+  const logs = guild.channels.cache.find(channel => channel.name === "logs");
+  if (guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) {
+    guild.channels.create("logs", { type: "GUILD_TEXT" });
   }
-  if (!message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) { 
+  if (!guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) { 
     console.log("The logs channel does not exist and tried to create the channel but I am lacking permissions")
   }  
 
@@ -135,11 +135,11 @@ client.on('channelCreate', async channel => {
 });
 //Channel Delete
 client.on('channelDelete', async channel => {
-  const logs = message.guild.channels.cache.find(channel => channel.name === "logs");
-  if (message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) {
-    message.guild.channels.create("logs", { type: "GUILD_TEXT" });
+  const logs = guild.channels.cache.find(channel => channel.name === "logs");
+  if (guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) {
+    guild.channels.create("logs", { type: "GUILD_TEXT" });
   }
-  if (!message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) { 
+  if (!guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) { 
     console.log("The logs channel does not exist and tried to create the channel but I am lacking permissions")
   }  
 
