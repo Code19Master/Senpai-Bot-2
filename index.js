@@ -117,23 +117,39 @@ client.on("messageDelete", async (message) => {
 })
 //Channel Create
 client.on('channelCreate', async channel => {
+  const logs = message.guild.channels.cache.find(channel => channel.name === "logs");
+  if (message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) {
+    message.guild.channels.create("logs", { type: "GUILD_TEXT" });
+  }
+  if (!message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) { 
+    console.log("The logs channel does not exist and tried to create the channel but I am lacking permissions")
+  }  
+
   let embed = new Discord.MessageEmbed()
   .setTitle("A Channel Was Created")
   .setDescription("Channel with name: #" + channel.name + " was just created")
   .setColor("RANDOM")
   .setTimestamp()
   
-    client.channels.cache.get('925362722298818601').send(({ embeds: [embed] }));
+    logs.send(({ embeds: [embed] }));
 });
 //Channel Delete
 client.on('channelDelete', async channel => {
+  const logs = message.guild.channels.cache.find(channel => channel.name === "logs");
+  if (message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) {
+    message.guild.channels.create("logs", { type: "GUILD_TEXT" });
+  }
+  if (!message.guild.me.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS) && !logs) { 
+    console.log("The logs channel does not exist and tried to create the channel but I am lacking permissions")
+  }  
+
   let embed = new Discord.MessageEmbed()
   .setTitle("A Channel Was Delete")
   .setDescription("Channel with name: #" + channel.name + " was just Deleted")
   .setColor("RANDOM")
   .setTimestamp()
   
-    client.channels.cache.get('925362722298818601').send(({ embeds: [embed] }));
+    logs.send(({ embeds: [embed] }));
 });
 
 
