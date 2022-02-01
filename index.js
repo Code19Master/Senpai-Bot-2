@@ -627,7 +627,7 @@ if (message.content === '--ytt') {
 }
 }
 
-if (message.content === '--vaporwave' || '--vw') {
+if (message.content === '--vaporwave') {
   vaporwave('CodeMaster100')
 }
 
