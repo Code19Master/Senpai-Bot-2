@@ -627,7 +627,21 @@ if (message.content === '--ytt') {
 }
 }
 
-
+if (message.content === '--wypb' || '-willyoupressthebutton') {
+  await WillYouPressTheButton({
+    message: --wypb,
+    embed: {
+      title: 'Will you press the button?',
+      description: '```{{statement1}}```\n**but**\n\n```{{statement2}}```',
+      color: '#5865F2',
+          footer: 'CodeMaster100',
+      timestamp: true
+    },
+    button: { yes: 'Yes', no: 'No' },
+    thinkMessage: 'Wait Bruh lemme Think',
+    othersMessage: 'Only <@{{author}}> can use the buttons!'
+  });
+}
 
 
 })
