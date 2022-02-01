@@ -16,7 +16,7 @@ const { FastType } = require('weky');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { DiscordTogether } = require('discord-together');
-
+const { vaporwave } = require('weky');
 
 
 
@@ -625,6 +625,10 @@ if (message.content === '--ytt') {
       return message.channel.send(`${invite.code}`);
   });
 }
+}
+
+if (message.content === '--vaporwave' || '--vw') {
+  vaporwave('CodeMaster100')
 }
 
 
