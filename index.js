@@ -638,7 +638,7 @@ if (message.content === '--wypb' || '-willyoupressthebutton') {
       timestamp: true
     },
     button: { yes: 'Yes', no: 'No' },
-    thinkMessage: 'I am thinking',
+    thinkMessage: 'Wait Bruh lemme Think',
     othersMessage: 'Only <@{{author}}> can use the buttons!'
   });
 }
