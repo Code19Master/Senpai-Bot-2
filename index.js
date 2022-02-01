@@ -16,7 +16,7 @@ const { FastType } = require('weky');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { DiscordTogether } = require('discord-together');
-const { vaporwave } = require('weky');
+const { WillYouPressTheButton } = require('weky');
 
 
 
@@ -627,8 +627,20 @@ if (message.content === '--ytt') {
 }
 }
 
-if (message.content === '--vaporwave') {
-  vaporwave('CodeMaster100')
+if (message.content === '--wypb' || '-willyoupressthebutton') {
+  await WillYouPressTheButton({
+    message: message,
+    embed: {
+      title: 'Will you press the button?',
+      description: '```{{statement1}}```\n**but**\n\n```{{statement2}}```',
+      color: '#5865F2',
+          footer: 'CodeMaster100',
+      timestamp: true
+    },
+    button: { yes: 'Yes', no: 'No' },
+    thinkMessage: 'I am thinking',
+    othersMessage: 'Only <@{{author}}> can use the buttons!'
+  });
 }
 
 
