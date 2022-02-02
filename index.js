@@ -445,27 +445,27 @@ if(message.content.toLowerCase().startsWith('--reminder')){
 
 //lol
 if (message.content === "lol") {
- message.channel.send("<:kekw:872848645676990485>")
+ message.channel.send("<:kekw:937739945794224190>")
 }
 
 if (message.content === "Lol") {
- message.channel.send("<:kekw:872848645676990485>")
+ message.channel.send("<:kekw:937739945794224190>")
 }
 
 if (message.content === "LOl") {
- message.channel.send("<:kekw:872848645676990485>")
+ message.channel.send("<:kekw:937739945794224190>")
 }
 
 if (message.content === "LOL") {
- message.channel.send("<:kekw:872848645676990485>")
+ message.channel.send("<:kekw:937739945794224190>")
 }
 
 if (message.content === "lOl") {
- message.channel.send("<:kekw:872848645676990485>")
+ message.channel.send("<:kekw:937739945794224190>")
 }
 
 if (message.content === "loL") {
- message.channel.send("<:kekw:872848645676990485>")
+ message.channel.send("<:kekw:937739945794224190>")
 }
 
 //Info
