@@ -632,4 +632,4 @@ if (message.content === '--ytt') {
 
 
 
-client.login("process.env.TOKEN")
+client.login(process.env.TOKEN)
